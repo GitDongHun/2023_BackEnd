@@ -37,6 +37,20 @@
 
             //자. 모든 형제
             // $("p~a").css("color","red");
+
+
+            //가. li:first-child ==> li의 부모기준으로 첫번째 자식
+            // $("li:first-child").css("color","red");
+
+            //나. li:last-child ==> li의 부모기준으로 마지막 자식
+            //$("li:last-child").css("color","red");
+
+            //다. li:nth-child(n) ==> li의 부모기준으로 n번째 자식, 1부터 시작
+            //$("li:nth-child(3)").css("color","red");
+
+            //라. li:nth-child(2n) ==> li의 부모기준으로 2의배수 자식, 1부터 시작
+            $("li:nth-child(2n)").css("color","red");
+            
         });
     </script>
 </head>
@@ -53,6 +67,20 @@
         <p>
             <span><a href="#" id="x">자손2</a></span>
         </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+            <li>f</li>
+        </ul>
     </div>
 </body>
 
