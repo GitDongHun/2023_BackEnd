@@ -49,8 +49,11 @@
             //$("li:nth-child(3)").css("color","red");
 
             //라. li:nth-child(2n) ==> li의 부모기준으로 2의배수 자식, 1부터 시작
-            $("li:nth-child(2n)").css("color","red");
-            
+            $("li:nth-child(2n)").css("color", "red");
+
+            //마. td:only-child ==> td의 부모기준으로 하나의 자식만 요소 반환
+            $("td:only-child").css("color", "red");
+
         });
     </script>
 </head>
@@ -81,6 +84,18 @@
             <li>e</li>
             <li>f</li>
         </ul>
+
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td colspan="4">1234</td>
+            </tr>
+        </table>
     </div>
 </body>
 
